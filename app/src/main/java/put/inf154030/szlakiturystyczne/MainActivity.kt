@@ -32,50 +32,5 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("track_list", Tracks.getTrackList("hard"))
             startActivity(intent)
         }
-//        if (findViewById<View>(R.id.track_details_container_large) != null) {
-//            if (savedInstanceState == null) {
-//                Tracks.createTrackList(this)
-//                val trackListFragment = TrackListFragment()
-//                supportFragmentManager.beginTransaction()
-//                    .add(R.id.track_list_container_large, trackListFragment)
-//                    .add(R.id.track_details_container_large, TrackDetailsFragment())
-//                    .commit()
-//            } else {
-//                trackName = savedInstanceState.getString("track_name").toString()
-//            }
-//        } else {
-//            if (savedInstanceState == null) {
-//                Tracks.createTrackList(this)
-//                val trackListFragment = TrackListFragment()
-//                supportFragmentManager.beginTransaction()
-//                    .add(R.id.track_list_container, trackListFragment)
-//                    .commit()
-//            }
-//        }
     }
-
-//    fun passSelectedItem(trackName: String) {
-//
-//        if (findViewById<View>(R.id.track_details_container_large) == null) {
-//            val intent = Intent(this, TrackDetailsActivity::class.java)
-//            intent.putExtra("track_name", trackName)
-//            startActivity(intent)
-//        } else {
-//            this.trackName = trackName
-//            val trackDetailsFragment = TrackDetailsFragment()
-//            supportFragmentManager.beginTransaction()
-//                .replace(R.id.track_details_container_large, trackDetailsFragment)
-//                .replace(R.id.stoper_container_large, StoperFragment())
-//                .commit()
-//        }
-//    }
-
-//    fun passToTrackDetailsFragment(): String {
-//        return Tracks.getTrackDescription(trackName)
-//    }
-
-//    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-//        outState.putString("track_name", trackName)
-//    }
 }
