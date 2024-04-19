@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Teczowy",
+    "difficulty": "easy",
+    "description": "Szlak Tęczowy prowadzi przez malownicze lasy i łąki, oferując piękne widoki na okolicę. Podczas wędrówki możesz napotkać dzikie zwierzęta i unikalne gatunki roślin. Szlak jest doskonały zarówno dla początkujących, jak i doświadczonych turystów. Nie zapomnij zabrać ze sobą aparatu, aby uwiecznić niezapomniane chwile na tym urokliwym szlaku. Pamiętaj także o odpowiednim ekwipunku i wodzie na długą wędrówkę."
+  },
+  {
+    "name": "Blekitny",
+    "difficulty": "hard",
+    "description": "Szlak Błękitny to idealny wybór dla miłośników wody i krajobrazów nadmorskich. Przebiega on wzdłuż brzegu jeziora, oferując możliwość podziwiania pięknych plaż i wzgórz. Podczas spaceru możesz spotkać lokalną faunę i florę. Pamiętaj o odpowiednim ubraniu, szczególnie wiatrówce, jeśli jesteś nad jeziorem. Warto także zabrać ze sobą lornetkę, aby obserwować ptaki nad wodą."
+  },
+  {
+    "name": "Zielony",
+    "difficulty": "easy",
+    "description": "Szlak Zielony to wspaniały sposób na ucieczkę od zgiełku miasta i połączenie się z naturą. Przebiega on przez gęste lasy, zapewniając cień i świeże powietrze. Idealny dla osób poszukujących spokoju i relaksu. Nie zapomnij zabrać ze sobą kosza piknikowego, aby zatrzymać się na odpoczynek i cieszyć się posiłkiem na łonie natury."
+  },
+  {
+    "name": "Rozowy",
+    "difficulty": "hard",
+    "description": "Szlak Różowy zapewnia magiczne doświadczenie spaceru po pachnących polach kwiatów. Przez większość roku otoczony jest różami, lawendą i innymi kolorowymi kwiatami. To doskonałe miejsce do robienia zdjęć i relaksu w otoczeniu pięknej przyrody. Zalecamy wizytę wczesnym rankiem lub późnym popołudniem, aby uniknąć tłumów turystów."
+  },
+  {
+    "name": "Zolty",
+    "difficulty": "easy",
+    "description": "Szlak Żółty prowadzi przez malownicze wzgórza i doliny, oferując panoramiczne widoki na okolicę. Podczas wędrówki możesz spotkać dzikie zwierzęta, takie jak jelenie i zające. Szlak ten jest dobrze oznakowany i łatwo dostępny dla wszystkich poziomów umiejętności. Pamiętaj o odpowiednim obuwiu trekkingowym i ochraniaczach na kolana, szczególnie na stromych zboczach."
+  },
+  {
+    "name": "Pomaranczowy",
+    "difficulty": "hard",
+    "description": "Szlak Pomarańczowy to doskonały wybór dla osób szukających przygody i adrenaliny. Prowadzi on przez skaliste tereny i wąwozy, oferując możliwość pokonania różnych trudności. To doskonałe miejsce do uprawiania wspinaczki i trekkingu. Pamiętaj o odpowiednim sprzęcie i partnerze wędrówki, abyś zawsze mógł cieszyć się bezpieczną przygodą."
+  },
+  {
+    "name": "Fioletowy",
+    "difficulty": "easy",
+    "description": "Szlak Fioletowy to doskonały wybór dla miłośników historii i kultury. Prowadzi on przez stare miasta, zamki i ruiny, oferując możliwość odkrywania fascynujących miejsc. To także doskonała okazja do spotkania lokalnych mieszkańców i spróbowania tradycyjnych potraw. Pamiętaj o odpowiednim aparacie fotograficznym, aby uwiecznić magiczne chwile na tym niezwykłym szlaku."
+  },
+  {
+    "name": "Szary",
+    "difficulty": "hard",
+    "description": "Szlak Szary to idealny wybór dla osób poszukujących ciszy i spokoju. Prowadzi on przez odległe tereny, z dala od zgiełku miasta i turystów. To doskonała okazja do kontemplacji przyrody i medytacji. Pamiętaj o odpowiednim wyposażeniu, takim jak latarka, jeśli planujesz wędrówkę w nocy."
+  },
+  {
+    "name": "Brazowy",
+    "difficulty": "easy",
+    "description": "Szlak Brązowy prowadzi przez bujne lasy deszczowe, oferując możliwość obserwacji dzikiej fauny i flory. To doskonały wybór dla osób zainteresowanych ochroną środowiska i ekoturystyką. Pamiętaj o odpowiednim ekwipunku, takim jak lekkie ubrania i repelent na owady."
+  },
+  {
+    "name": "Czarny",
+    "difficulty": "hard",
+    "description": "Szlak Czarny to doskonały wybór dla osób poszukujących wyzwań i ekstremalnych doświadczeń. Prowadzi on przez niebezpieczne tereny górskie i skaliste, wymagając odwagi i determinacji. To doskonałe miejsce do uprawiania sportów ekstremalnych, takich jak wspinaczka górska i jazda na nartach. Pamiętaj o odpowiednim przygotowaniu fizycznym i sprzęcie, abyś zawsze był gotowy na trudności szlaku."
+  }
+]
