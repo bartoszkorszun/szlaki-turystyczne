@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MenuFragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -16,7 +17,36 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/trudne"
+                android:backgroundTint="#FF9900"
+                android:text="@string/home"/>
+            <Button
+                android:id="@+id/trudne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/home"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/latwe"
+                android:backgroundTint="#FF9900"
+                android:text="@string/trudne"/>
+            <Button
+                android:id="@+id/latwe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/trudne"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="#FF9900"
+                android:text="@string/latwe"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 class StoperFragment : Fragment() {
@@ -22,6 +23,10 @@ class StoperFragment : Fragment() {
             running = savedInstanceState.getBoolean("running")
             wasRunning = savedInstanceState.getBoolean("wasRunning")
         }
+        if (Stoper.track == (activity as TrackDetailsActivity).getTrackName()) {
+            seconds = Stoper.seconds
+            running = true
+        }
     }
 
     override fun onCreateView(
@@ -36,9 +41,16 @@ class StoperFragment : Fragment() {
         val stopButton: Button = layout.findViewById(R.id.stop_button)
         val resetButton: Button = layout.findViewById(R.id.reset_button)
 
-        startButton.setOnClickListener(this::onClick)
-        stopButton.setOnClickListener(this::onClick)
-        resetButton.setOnClickListener(this::onClick)
+        if (Stoper.track == "" || Stoper.track == (activity as TrackDetailsActivity).getTrackName()) {
+            startButton.setOnClickListener(this::onClick)
+            stopButton.setOnClickListener(this::onClick)
+            resetButton.setOnClickListener(this::onClick)
+        } else {
+            startButton.isEnabled = false
+            stopButton.isEnabled = false
+            resetButton.isEnabled = false
+            Toast.makeText(requireContext(), "Stoper działa na innym szlaku!", Toast.LENGTH_LONG).show()
+        }
 
         return layout
     }
@@ -63,10 +75,16 @@ class StoperFragment : Fragment() {
     }
 
     private fun onClickStart() {
+        Stoper.track = (activity as TrackDetailsActivity).getTrackName()
+        Stoper.runningStopper = true
+        Stoper.runStoper()
         running = true
     }
 
     private fun onClickStop() {
+        Stoper.track = ""
+        Stoper.seconds = 0
+        Stoper.runningStopper = false
         running = false
     }
 

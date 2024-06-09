@@ -7,147 +7,157 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/tool_bar_fragment"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_height="wrap_content" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/description_card_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/gray"
-            android:layout_margin="20dp"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/tool_bar_fragment"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/easy_tracks_card_view">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
 
-                        <ImageView
-                            android:id="@+id/description_image_view"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:src="@drawable/track"
-                            android:scaleType="centerCrop"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toTopOf="@+id/description_text_view" />
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/description_text_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:text="@string/app_descripiton"
-                            android:textStyle="bold"
-                            android:textAlignment="center"
-                            app:layout_constraintTop_toBottomOf="@+id/description_image_view"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/description_card_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    app:cardBackgroundColor="@color/gray"
+                                    app:cardCornerRadius="16dp"
+                                    app:cardElevation="16dp">
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
 
-        </androidx.cardview.widget.CardView>
+                                                <ImageView
+                                                    android:id="@+id/description_image_view"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="150dp"
+                                                    android:scaleType="centerCrop"
+                                                    android:src="@drawable/track"
+                                                    app:layout_constraintBottom_toTopOf="@+id/description_text_view"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/easy_tracks_card_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            app:cardBackgroundColor="@color/gray"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/description_card_view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/hard_tracks_card_view">
+                                                <TextView
+                                                    android:id="@+id/description_text_view"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="10dp"
+                                                    android:text="@string/app_descripiton"
+                                                    android:textAlignment="center"
+                                                    android:textStyle="bold"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintHorizontal_bias="0.0"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toBottomOf="@+id/description_image_view" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                        <ImageView
-                            android:id="@+id/easy_tracks_image_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:src="@drawable/easytracks"
-                            android:scaleType="centerCrop"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toTopOf="@+id/easy_tracks_text_view" />
+                                </androidx.cardview.widget.CardView>
 
-                        <TextView
-                            android:id="@+id/easy_tracks_text_view"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:text="@string/easy_tracks"
-                            android:textSize="24sp"
-                            android:textStyle="bold"
-                            android:textAlignment="center"
-                            app:layout_constraintTop_toBottomOf="@+id/easy_tracks_image_view"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/easy_tracks_card_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    app:cardBackgroundColor="@color/gray"
+                                    app:cardCornerRadius="16dp"
+                                    app:cardElevation="16dp">
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
 
-        </androidx.cardview.widget.CardView>
+                                                <ImageView
+                                                    android:id="@+id/easy_tracks_image_view"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="150dp"
+                                                    android:scaleType="centerCrop"
+                                                    android:src="@drawable/easytracks"
+                                                    app:layout_constraintBottom_toTopOf="@+id/easy_tracks_text_view"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.cardview.widget.CardView
-                android:id="@+id/hard_tracks_card_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                    app:cardBackgroundColor="@color/gray"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="16dp"
-                app:layout_constraintTop_toBottomOf="@+id/easy_tracks_card_view"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                                                <TextView
+                                                    android:id="@+id/easy_tracks_text_view"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="10dp"
+                                                    android:text="@string/easy_tracks"
+                                                    android:textAlignment="center"
+                                                    android:textSize="24sp"
+                                                    android:textStyle="bold"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toBottomOf="@+id/easy_tracks_image_view" />
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                                <ImageView
-                                android:id="@+id/hard_tracks_image_view"
-                                android:layout_width="match_parent"
-                                android:layout_height="150dp"
-                                android:src="@drawable/hardtracks"
-                                android:scaleType="centerCrop"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintBottom_toTopOf="@+id/hard_tracks_text_view" />
+                                </androidx.cardview.widget.CardView>
 
-                                <TextView
-                                android:id="@+id/hard_tracks_text_view"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="10dp"
-                                android:text="@string/hard_tracks"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
-                                android:textAlignment="center"
-                                app:layout_constraintTop_toBottomOf="@+id/hard_tracks_image_view"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"/>
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/hard_tracks_card_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="20dp"
+                                    app:cardBackgroundColor="@color/gray"
+                                    app:cardCornerRadius="16dp"
+                                    app:cardElevation="16dp">
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
 
-                </androidx.cardview.widget.CardView>
+                                                <ImageView
+                                                    android:id="@+id/hard_tracks_image_view"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="150dp"
+                                                    android:scaleType="centerCrop"
+                                                    android:src="@drawable/hardtracks"
+                                                    app:layout_constraintBottom_toTopOf="@+id/hard_tracks_text_view"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                                <TextView
+                                                    android:id="@+id/hard_tracks_text_view"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_margin="10dp"
+                                                    android:text="@string/hard_tracks"
+                                                    android:textAlignment="center"
+                                                    android:textSize="24sp"
+                                                    android:textStyle="bold"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toBottomOf="@+id/hard_tracks_image_view" />
+
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                </ScrollView>
+        </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

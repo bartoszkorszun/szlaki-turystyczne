@@ -18,9 +18,9 @@ class TrackListActivity : AppCompatActivity() {
         trackList = intent.getSerializableExtra("track_list") as ArrayList<Tracks>
 
         if (savedInstanceState == null) {
-            val trackListFragment = TrackListFragment()
             supportFragmentManager.beginTransaction()
-                .add(R.id.track_list_container, trackListFragment)
+                .replace(R.id.tool_bar_fragment, MenuFragment())
+                .add(R.id.track_list_container, TrackListFragment())
                 .commit()
         }
     }

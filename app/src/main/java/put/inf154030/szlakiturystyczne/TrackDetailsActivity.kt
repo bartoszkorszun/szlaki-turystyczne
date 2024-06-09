@@ -23,6 +23,7 @@ class TrackDetailsActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
+                .replace(R.id.tool_bar_fragment, MenuFragment())
                 .add(R.id.track_image_container, TrackImageFragment())
                 .add(R.id.track_details_container, TrackDetailsFragment())
                 .add(R.id.stoper_container, StoperFragment())
@@ -44,5 +45,9 @@ class TrackDetailsActivity : AppCompatActivity() {
 
     fun passToTrackImageFragment(): String {
         return intent.getStringExtra("track_name").toString()
+    }
+
+    fun getTrackName(): String {
+        return trackName
     }
 }

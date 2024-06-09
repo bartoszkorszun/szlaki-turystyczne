@@ -7,4 +7,7 @@
     <string name="app_descripiton">"Szlaki Turystyczne" to aplikacja umożliwiająca odkrywanie różnorodnych szlaków turystycznych o różnym stopniu trudności, od łatwych spacerów po wymagające trasy górskie.</string>
     <string name="easy_tracks">SZLAKI ŁATWE</string>
     <string name="hard_tracks">SZLAKI TRUDNE</string>
+    <string name="home">Home</string>
+    <string name="trudne">Trudne</string>
+    <string name="latwe">Łatwe</string>
 </resources>
